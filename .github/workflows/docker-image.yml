@@ -22,7 +22,7 @@ jobs:
 
       # Build Docker image
       - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag ujjwaltiwariii/test:latest
+        run: docker build . --file Dockerfile --tag ujjwaltiwariii/test:latest$(date +%s)
 
       # Push Docker image to Docker Hub
       - name: Push Docker image
